@@ -1,0 +1,61 @@
+
+% !TeX TS-program = xelatex
+\documentclass{beamer}
+
+\usetheme{EastLansing}
+% توجه: تست شده در تکلایو 2021
+%\setbeameroption{show notes}
+%\setbeameroption{hide notes}
+%\setbeameroption{show only notes}
+
+\setbeameroption{show notes on second screen}%=right,left, bottom, or top.
+
+\usefonttheme{serif,professionalfonts}
+
+\usepackage{xepersian}
+\settextfont{XB Zar}
+\setdigitfont{Yas}
+\raggedleft
+
+\defpersianfont\nast[Scale=1.5,ExternalLocation]{IranNastaliq}
+
+% Solve
+%\input{command_Ahmadi}
+
+\title{عنوان اسلاید}
+\subtitle{زیرعنوان اسلاید}
+\author[مجتبیٰ احمدی]{{\color{blue}\nast مجتبیٰ احمدی}}
+\institute[پیام‌نو‌ر مشگین شهر]{دانشگاه: پیام‌نو‌ر مشگین شهر}
+\date{\today}
+\logo{\rotatebox{90}{\large\color{blue}\lr{@Tex\_Ahmadi}}}
+
+\begin{document}
+
+\begin{frame}
+\centerline{\includegraphics[scale=.04]{logo1.png} }
+\vskip-4mm
+\titlepage
+\end{frame}
+
+\section{بخش}
+\subsection{زیربخش}
+
+\begin{frame}<1-2>{عنوان فریم}
+این متن اسلاید است
+\begin{equation}
+P_{r-j}=\begin{cases}
+0& \text{if $r-j$ is odd},\\
+r!\,(-1)^{(r-j)/2}& \text{if $r-j$ is even}.
+\end{cases}
+\end{equation}
+\note{این یادداشت برای تست است}
+
+\end{frame}
+
+\note[enumerate]
+{%
+\item آیتم اول
+\item آیتم دوم
+}
+
+\end{document}
